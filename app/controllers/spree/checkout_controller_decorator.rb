@@ -1,6 +1,6 @@
 Spree::CheckoutController.class_eval do
 
-  before_filter :pay_with_payu, only: :update
+  before_action :pay_with_payu, only: :update
 
   private
 
