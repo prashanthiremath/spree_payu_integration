@@ -20,7 +20,7 @@ class PayuOrder
     description = I18n.transliterate(description)
 
     {
-      key: OpenPayU::Configuration.merchant_pos_id,
+      merchant_pos_id: OpenPayU::Configuration.merchant_pos_id,
     #  customer_ip: ip,
       txnid: "#{order.number}",
       amount: (order.total * 100).to_i,
